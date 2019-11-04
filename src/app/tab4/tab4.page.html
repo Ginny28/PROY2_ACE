@@ -7,20 +7,44 @@
 </ion-header>
 
 <ion-content>
-  <ion-card class="welcome-card">
-    <ion-card-header>
-      <ion-card-subtitle>Distancia vs Tiempo</ion-card-subtitle>
-    </ion-card-header>
-    <ion-card-content>
-      <p-chart type="line" [data]="graph1"></p-chart>
-    </ion-card-content>
-  </ion-card>
-  <ion-card-header>
-    <ion-card-subtitle>Distancia vs Tiempo Total</ion-card-subtitle>
-  </ion-card-header>
-  <ion-card-content>
-    <ion-card class="welcome-card">
-      <p-chart type="line" [data]="graph2"></p-chart>
-    </ion-card>
-  </ion-card-content>
+
+    <p-tabView>
+        <p-tabPanel header="Distancia">
+            <ion-card class="welcome-card">
+                <ion-card-header>
+                  <ion-card-subtitle>Distancia vs Tiempo</ion-card-subtitle>
+                </ion-card-header>
+                <ion-card-content>
+                  <p-chart type="line" [data]="graph1"></p-chart>
+                </ion-card-content>
+              </ion-card>
+          
+        </p-tabPanel>
+        <p-tabPanel header="Velocidad">
+            <ion-card class="welcome-card">
+                <ion-card-header>
+                  <ion-card-subtitle>Velocidad vs Tiempos</ion-card-subtitle>
+                </ion-card-header>
+                <ion-card-content>
+                  <p-chart type="line" [data]="graph3"></p-chart>
+                </ion-card-content>
+              </ion-card>
+          
+              
+        </p-tabPanel>
+        <p-tabPanel header="Objeto">
+            <ion-card class="welcome-card">
+                <ion-card-header>
+                  <ion-card-subtitle>Object vs Tiempo</ion-card-subtitle>
+                </ion-card-header>
+                <ion-card-content>
+                  <p-chart type="line" [data]="graph4"></p-chart>
+                </ion-card-content>
+              </ion-card>
+        </p-tabPanel>
+    </p-tabView>
+ 
+
+  
+
 </ion-content>

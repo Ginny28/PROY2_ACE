@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import {ChartModule} from 'primeng/chart';
 import { IonicModule } from '@ionic/angular';
 import { Tab4Page } from './tab4.page';
+import {TabViewModule} from 'primeng/tabview';
 
 const routes: Routes = [
   {
@@ -18,6 +19,7 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     ChartModule,
+    TabViewModule,
     IonicModule,
     RouterModule.forChild(routes)
   ],
