@@ -6,4 +6,21 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-subtitle>Distancia vs Tiempo</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <p-chart type="line" [data]="graph1"></p-chart>
+    </ion-card-content>
+  </ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>Distancia vs Tiempo Total</ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-card class="welcome-card">
+      <p-chart type="line" [data]="graph2"></p-chart>
+    </ion-card>
+  </ion-card-content>
+</ion-content>
